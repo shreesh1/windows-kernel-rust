@@ -1,0 +1,8 @@
+**/target/
+*.lock
+*.dll
+*.pdb
+*.lib
+*.exe
+*.cer
+*.loadsetup
