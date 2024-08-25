@@ -13,7 +13,7 @@ fn panic(_info: &PanicInfo) -> ! {
 #[no_mangle]
 pub extern "system" fn driver_entry(driver: &mut DRIVER_OBJECT, _: &UNICODE_STRING) -> NTSTATUS {
     unsafe {
-        DbgPrint("Hello, Nigger!\0".as_ptr());
+        DbgPrint("Hello, World!\0".as_ptr());
     }
 
     driver.DriverUnload = Some(driver_exit);
